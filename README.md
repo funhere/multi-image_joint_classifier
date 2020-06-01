@@ -5,8 +5,8 @@ This repository contains a Pytorch implementation of classifier based on multipl
 
 ## Supported Features
 - Joint training/inference on one or multiple images each time;
-- Each image runs on one backbone net and combines all the results to classify.
-- Models/schedulers/optimizers are factorized and can be customized.
+- Each image is processed independently on a CNN net, then fusion;
+- Models/schedulers/optimizers are factorized and can be customized;
 - Supported models: Resnet/ResNeXT serials/EfficientNet/DPN.etc.,
 - A simple web app based on Flask and React.
 
