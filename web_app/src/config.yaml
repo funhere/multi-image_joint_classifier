@@ -1,0 +1,42 @@
+title: AGA Images Classifier
+description: Multiple Images Joint Classifier
+about:
+
+
+  This is a Multiple Images Classifier using Deep Learning built on top of Pytorch.
+
+
+  The project was build by [Simon Feng](https://npatta01.github.io)
+  and [Simon Feng](https://reshamas.github.io).
+
+
+  More info and the source code can he found below.
+
+
+  [Blog](https://reshamas.github.io/deploying-deep-learning-models-on-web-and-mobile/)
+
+  [Web app](https://food-img-classifier.herokuapp.com)
+
+
+  To try out this mobile app
+
+    - [Expo](https://expo.io/@npatta01/food-app)
+
+    - [Android](https://play.google.com/store/apps/details?id=com.rsnp.foodclassifier)
+
+    - [iOS](https://itunes.apple.com/us/app/food-classifier/id1445356461?ls=1&mt=8)
+
+
+
+code: https://github.com/npatta01/web-deep-learning-classifier
+
+sampleImages:
+  - name: lasagne
+    url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Lasagne_-_stonesoup.jpg
+  - name: sushi
+    url: https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg
+  - name: waffles
+    url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Waffles_with_Strawberries.jpg
+  - name: eggplant (not in training data)
+    url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/1280px-Solanum_melongena_24_08_2012_%281%29.JPG
+  - name: table (not in training & not a food)

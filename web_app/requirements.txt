@@ -1,0 +1,7 @@
+torch~=1.0
+torchvision
+sklearn
+pandas
+pynvml
+flask
+Pillow
