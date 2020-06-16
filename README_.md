@@ -85,7 +85,7 @@ data/BDDA/
 ...
 
 
-## Single-frame prediction
+## Solution 1: Single-frame prediction
 Project directory: projects/collision_detection_single
 All the utility scripts are located under the directory `scripts`.
 
@@ -198,7 +198,7 @@ Inference results： demo/pred_out/pred_intersection_2_single.mp4
 
 
 
-## Multi-frame prediction
+## Solution 2: Multi-frame prediction
 Project directory: projects/collision_detection_multiframe
 All the utility scripts are located under the directory `scripts`.
 
