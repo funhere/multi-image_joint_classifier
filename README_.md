@@ -25,6 +25,7 @@ Dataset Name: ETH
 
 Dataset structure:
 data/ETH/
+```
 |-- test.csv                       <- Test items refer from original dataset
 |-- test_merged.csv                <- Test items + validation items
 |-- train.csv                      <- Train items refer from original dataset
@@ -46,7 +47,7 @@ data/ETH/
 |   |   |   |-- frame_00002.jpg
 ...
 |   |   -- labels.txt              <- orig lable file 
-
+```
 Notes: 
     Due to the warning distance of the raw data is too short, all cases are 50 frames ahead.
 
@@ -56,6 +57,7 @@ Link: https://bdd-data.berkeley.edu
 
 Dataset structure:
 data/BDDA/
+```
 |-- classes.txt                       <- classes: 0,1  
 |-- labels                            <- Pre-processed Annotation lables 
 |   |-- test.csv                      <- Test items refer from original dataset
@@ -83,7 +85,7 @@ data/BDDA/
 |   |   |-- 1737_1_OGAT4iGU.mp4       <- Sample video
 |   |   |-- 1737_1_Tz9gn8OO.mp4
 ...
-
+```
 
 ## Solution 1: Single-frame prediction
 Project directory: projects/collision_detection_single
