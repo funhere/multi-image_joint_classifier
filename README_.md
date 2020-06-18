@@ -80,7 +80,7 @@ data/BDDA/
 |   |   |-- 1004_1_v8pX6AXx.mp4       <- Sample video
 |   |   |-- 1005_2_nBaXSCeL.mp4
 ...
-|-- clips_val                         <- Cutout Train clips
+|-- clips_val                         <- Cutout Validation clips
 |   |-- forward_collision_warning     <- Warning clips
 |   |   |-- 1737_1_OGAT4iGU.mp4       <- Sample video
 |   |   |-- 1737_1_Tz9gn8OO.mp4
@@ -114,6 +114,9 @@ $ pip3 install -r requirements.txt
 - Model: seresnext26t_32x4d-224     Top-1 85.66
 - Model: mobilenetv3_small_075-224  Top-1 83.38
 
+#### Accuracy and Frame rate:
+ <img src="assets/single_top1.png" width="800" hegiht="600" align=mid />
+ 
 
 ### Train
 #### scripts/train.sh
@@ -203,6 +206,12 @@ Inference results： demo/pred_out/pred_intersection_2_single.mp4
 ## Solution 2: Multi-frame prediction
 Project directory: projects/collision_detection_multiframe
 All the utility scripts are located under the directory `scripts`.
+
+### Architecture of Model:
+ <img src="assets/arch.png" width="800" hegiht="600" align=mid />
+
+### Inference Sliding Windows
+ <img src="assets/multi_infer.png" width="800" hegiht="600" align=mid />
 
 
 ### Install the required packages
