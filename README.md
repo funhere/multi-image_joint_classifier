@@ -18,19 +18,7 @@ This repository contains a Pytorch implementation of classifier based on multipl
 
 ## Installation
 - Install Python 3.7.0
-- pip install -r requirements.txt
-
-
-## Models & Draft results
-- Model: dpn131-224                     
-- Model: wide_resnet101_2-224           
-- Model: resnext50d_32x4d-224          
-- Model: wide_resnet50_2-224            
-- Model: dpn68b-224                    
-- Model: ig_resnext101_32x16d-224       
-- Model: tf_efficientnet_b7-600         
-- Model: tf_efficientnet_b4-380         
-- Model: resnet34-224                   
+- pip install -r requirements.txt            
 
 ## Train
 ```
@@ -70,41 +58,99 @@ The following were used for model **deployment**:
 
 ## Installation
 - pip install -r requirements.txt
- 
-## Table of Contents
-```
-└── web_app
-    ├── Dockerfile
-    ├── README.md
-    ├── assets
-    ├── docs
-    │   ├── 1_b_gcloud.md
-    │   └── 2_heroku_app.md
-    ├── models                    <- Deployed models are store here.
-    │   ├── README.md
-    │   ├── classes.csv
-    │   └── classes.txt
-    ├── notebooks
-    ├── requirements.txt
-    └── src
-        ├── app.py                 <- Main web application 
-        ├── config.yaml
-        └── static
-            ├── css
-            │   └── custom.css
-            ├── index.html
-            └── js
-                ├── main.js
-                └── main.jsx
-```
 
 ## Launch the server
-$ python3 app.py
+$> python3 app.py
 
 ## Access on web 
 Run on web with:
  http://0.0.0.0:8001/
 
+## Folder Structure
+```
+├── data
+├── data_conversion
+│   ├── __init__.py
+│   ├── autoaugment.py
+│   ├── config.py
+│   ├── constants.py
+│   ├── distributed_sampler.py
+│   ├── loader.py
+│   ├── mixup.py
+│   ├── mv_dataset.py
+│   ├── random_erasing.py
+│   └── transforms.py
+├── distributed_train.sh
+├── docker
+│   ├── Dockerfile
+│   └── README.md
+├── loss
+│   ├── __init__.py
+│   └── cross_entropy.py
+├── models
+│   ├── __init__.py
+│   ├── adaptive_avgmax_pool.py
+│   ├── conv2d_helpers.py
+│   ├── densenet.py
+│   ├── dpn.py
+│   ├── factory.py
+│   ├── gen_efficientnet.py
+│   ├── gluon_resnet.py
+│   ├── helpers.py
+│   ├── inception_resnet_v2.py
+│   ├── inception_v3.py
+│   ├── inception_v4.py
+│   ├── median_pool.py
+│   ├── nasnet.py
+│   ├── pnasnet.py
+│   ├── registry.py
+│   ├── resnet.py
+│   ├── senet.py
+│   ├── test_time_pool.py
+│   └── xception.py
+├── notebooks
+│   ├── data_analysis.ipynb
+├── optim
+│   ├── __init__.py
+│   ├── nadam.py
+│   ├── optim_factory.py
+│   └── rmsprop_tf.py
+├── output
+├── requirements.txt
+├── scheduler
+│   ├── __init__.py
+│   ├── cosine_lr.py
+│   ├── plateau_lr.py
+│   ├── scheduler.py
+│   ├── scheduler_factory.py
+│   ├── step_lr.py
+│   └── tanh_lr.py
+├── train.py
+├── train.sh
+├── utils
+│   ├── plots.py
+│   └── utils.py
+├── validation_and_analysis.ipynb
+└── web_app
+    ├── Dockerfile
+    ├── README.md
+    ├── models
+    │   ├── README.md
+    │   ├── classes.csv
+    │   └── classes.txt
+    ├── notebooks
+    ├── requirements.txt
+    └── src
+        ├── app.py
+        ├── config.yaml
+        └── static
+            ├── css
+            │   └── custom.css
+            ├── index.html
+            └── js
+                ├── main.js
+                └── main.jsx
+```
 
 
 
